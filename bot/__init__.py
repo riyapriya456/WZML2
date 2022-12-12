@@ -781,7 +781,7 @@ if ospath.exists('list_drives.txt'):
             else:
                 INDEX_URLS.append('')
 
-if BASE_URL:
+if True:
     Popen(f"gunicorn web.wserver:app --bind 0.0.0.0:{SERVER_PORT}", shell=True)
 
 srun(["qbittorrent-nox", "-d", "--profile=."])
