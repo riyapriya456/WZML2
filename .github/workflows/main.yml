@@ -48,4 +48,4 @@ jobs:
 
           push: true
 
-          tags: rushidhar/mltb3:latest
+          tags: rushidhar/wzml3:latest
