@@ -481,12 +481,12 @@ def change_filename(file_, user_id_, dirpath=None, up_path=None, all_edit=True, 
         file_ = __newFileName
         LOGGER.info("Remname : "+file_)
     if PREFIX:
-        if PREFIX[len(PREFIX)-1::].isalpha() or PREFIX[len(PREFIX)-1::].isdigit():
-            if not file_.startswith(PREFIX):
-                file_ = f"{PREFIX} {file_}"
-        else:
+        if PREFIX.endswith("_"):
             if not file_.startswith(PREFIX):
                 file_ = f"{PREFIX}{file_}"
+        else:
+            if not file_.startswith(PREFIX):
+                file_ = f"{PREFIX} {file_}"
     if SUFFIX and not mirror_type:
         sufLen = len(SUFFIX)
         fileDict = file_.split('.')
