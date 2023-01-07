@@ -12,7 +12,6 @@ dnspython
 feedparser
 flask
 gc-python-utils
-git+https://github.com/SilentDemonSD/cinemagoer
 google-api-python-client
 google-auth-httplib2
 google-auth-oauthlib
@@ -24,11 +23,8 @@ pillow
 psutil
 pybase64
 pycountry
-pymongo
-pyrogram
 python-dotenv
 python-magic
-python-telegram-bot
 qbittorrent-api
 requests
 speedtest-cli
